@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Laila', serif;
+    font-family: 'Open Sans';
+  }
+  body{
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+      background-size: 400% 400%;
+      animation: Gradient 15s ease infinite;
+  }
+  @keyframes Gradient {
+      0% {
+          background-position: 0% 50%
+      }
+      50% {
+          background-position: 100% 50%
+      }
+      100% {
+          background-position: 0% 50%
+      }
+  }
+  .contenedor{
+    margin: auto;
+    min-height: 500px;
+    min-width: 400px;
+  }
+  .contenedor-formulario-externo{
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: .7rem;
+  }
+  .contenedor-formulario-interno{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 6fr auto;
+  }
+  .titulo-formulario{
+    background-color: rgb(34,138,230);
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    border-radius: .6rem .6rem 0 0;
+  }
+  .contenedor-inputs{
+    padding: 11rem;
+  }
+  .contenedor-botones{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .contenedor-botones > input {
+    margin: auto;
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: .2rem .5rem;
+    border-radius: .4rem;
+  }
+  .nuevo{
+    background-color: rgb(255,173,51);
+  }
+  .enviar{
+    background-color: rgb(76,175,80);
+  }
+  .salir{
+    background-color: rgb(108,36,152);
+  }
